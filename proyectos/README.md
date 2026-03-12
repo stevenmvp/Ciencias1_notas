@@ -102,19 +102,91 @@ g++ -o proyecto2 02_sudoku_y_suma.cpp
 
 ---
 
+### Proyecto 3: Tablero NxN con Piezas de Ajedrez ✅
+**Nivel:** Intermedio
+**Conceptos:** Backtracking, poda, validación de restricciones
+**Descripción:** Programa interactivo que ubica una cantidad configurable de piezas iguales en un tablero de tamaño configurable (NxN) sin que se amenacen entre sí.
+
+**Archivo:** `03_tablero_5x5_piezas.cpp`
+
+**Piezas soportadas (a elección del usuario):**
+- Peones
+- Caballos
+- Alfiles
+- Torres
+- Reinas
+
+**Funcionalidades:**
+- Menú para elegir tipo de pieza
+- Entrada del tamaño del tablero (NxN)
+- Entrada de la cantidad de fichas objetivo
+- Búsqueda de posiciones válidas con backtracking
+- Explicación paso a paso del proceso de búsqueda (búsqueda, descarte, encrucijada, vuelta atrás)
+- Mostrar posiciones encontradas
+- Renderizado del tablero NxN en consola
+
+**Cómo Compilar:**
+```bash
+cd /workspaces/Ciencias1_notas/proyectos
+g++ -o tablero_ajedrez_5x5 03_tablero_5x5_piezas.cpp
+```
+
+**Cómo Ejecutar:**
+```bash
+./tablero_ajedrez_5x5
+```
+
+---
+
+### Proyecto 4: Voraz y Vuelta Atrás (Monedas + Sudoku 9x9) ✅
+**Nivel:** Intermedio
+**Conceptos:** Greedy, backtracking, poda, validación robusta, manejo de errores
+**Descripción:** Menú completo con dos ejercicios: cambio de monedas con técnica voraz y resolución de Sudoku 9x9 con backtracking.
+
+**Archivo:** `04_greedy_backtracking.cpp`
+
+**Parte A - Cambio de Monedas (Greedy):**
+- Usa denominaciones fijas en pesos colombianos: 50, 100, 200, 500, 1000
+- Permite ingresar la cantidad objetivo manualmente o generarla aleatoriamente
+- Ordena monedas de mayor a menor para aplicar la estrategia voraz
+- Muestra el proceso paso a paso (qué moneda toma y restante)
+- Determina si el cambio exacto es posible o no
+- Incluye validaciones de rango con `try/catch`
+
+**Parte B - Sudoku 9x9 (Backtracking):**
+- Permite cargar tablero de ejemplo, ingreso manual o generación aleatoria
+- Usa `0` para casillas vacías
+- Valida conflictos iniciales por fila, columna y subcuadro
+- Resuelve con vuelta atrás y poda de posibilidades inválidas
+- Muestra métricas: intentos, asignaciones, retrocesos y podas
+- Opción para mostrar pasos de resolución explicados
+
+**Cómo Compilar:**
+```bash
+cd /workspaces/Ciencias1_notas/proyectos
+g++ -std=c++11 -O2 -Wall -o proyecto4 04_greedy_backtracking.cpp
+```
+
+**Cómo Ejecutar:**
+```bash
+./proyecto4
+```
+
+---
+
 ## 🎯 Proyectos Futuros Propuestos
 
-### Proyecto 3: Sistema de Gestión de Estudiantes
+### Proyecto 5: Sistema de Gestión de Estudiantes
 **Nivel:** Intermedio
 **Conceptos:** Estructuras, archivos, búsqueda
 **Descripción:** Gestionar información de estudiantes (nombre, edad, calificaciones)
 
-### Proyecto 4: Visualizador Gráfico de Algoritmos
+### Proyecto 6: Visualizador Gráfico de Algoritmos
 **Nivel:** Avanzado
 **Conceptos:** Gráficos, animaciones, interfaz
 **Descripción:** Visualizar paso a paso cómo trabajan los algoritmos
 
-### Proyecto 5: Compilador Simple
+### Proyecto 7: Compilador Simple
 **Nivel:** Avanzado
 **Conceptos:** Parsing, análisis léxico, árboles
 **Descripción:** Compilador básico para un lenguaje sencillo
@@ -131,4 +203,4 @@ g++ -o proyecto2 02_sudoku_y_suma.cpp
 
 ---
 
-**Última actualización:** Febrero 2026
+**Última actualización:** Marzo 2026

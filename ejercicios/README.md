@@ -32,6 +32,30 @@ g++ -o burbuja 01_algoritmo_burbuja.cpp
 ./burbuja
 ```
 
+### 2. Algoritmos Voraces (Greedy)
+
+#### 2.1 Cambio de Monedas (Enfoque Voraz)
+- **Archivo:** `06_algoritmo_voraz_cambio_monedas.cpp`
+- **Nivel:** Intermedio
+- **Concepto:** Elegir en cada paso la moneda de mayor valor posible
+
+**Cómo usar:**
+```bash
+g++ -o voraz_monedas 06_algoritmo_voraz_cambio_monedas.cpp
+./voraz_monedas
+```
+
+#### 2.2 Selección de Actividades (Greedy)
+- **Archivo:** `07_greedy_seleccion_actividades.cpp`
+- **Nivel:** Intermedio
+- **Concepto:** Maximizar actividades compatibles ordenando por tiempo de finalización
+
+**Cómo usar:**
+```bash
+g++ -o greedy_actividades 07_greedy_seleccion_actividades.cpp
+./greedy_actividades
+```
+
 ---
 
 ## 🚀 Próximas Prácticas
@@ -48,4 +72,4 @@ g++ -o burbuja 01_algoritmo_burbuja.cpp
 
 ---
 
-**Último actualizado:** Febrero 2026
+**Último actualizado:** Marzo 2026
